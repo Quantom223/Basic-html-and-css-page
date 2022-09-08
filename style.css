@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    width:300px;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 340px;
+}
+
+.perfume {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.2rem;
+    margin: 1.2rem 1rem 0.5rem 0;
+}
+
+article {
+    width: auto;
+}
+
+.container div:last-child {
+    background-color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+}
+
+article>img {
+    max-width: 100%;
+    margin-bottom: -4px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.Texts {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+h1,
+.price {
+    font-family: 'fraunces', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    margin: 0 0 0.75rem 0;
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+.text {
+    margin: 0.5rem 0 0 0;
+}
+
+h2,
+p {
+    font-family: 'montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+
+}
+
+div>p {
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+
+.pricingBox {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+    align-items: center;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
+.privious-Price {
+    padding: 0 0 0 1rem;
+}
+
+.AddToCart {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+button>p {
+    color: #fff;
+    padding: 0 0 0 0.5rem;
+}
+
+button {
+    margin: 0.5;
+}
+
+
+
+
+
+@media screen and (min-width:601px) {
+    .mobile-img {
+        display: none;
+    }
+
+    body {
+        width: 600px;
+
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: 560px;
+    }
+
+    .perfume {
+        margin: 1.5rem 1rem 1rem 0;
+    }
+
+    h1 {
+        margin: 0 0 1.3rem 0;
+    }
+
+    .pricingBox {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .AddToCart{
+      padding: 0.8rem;
+    }
+
+    .desktop-img {
+        min-width: 280px;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .container div:last-child {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .desktop-img {
+        display: none;
+    }
+}
