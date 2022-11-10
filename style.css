@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 
-
-
-
 body {
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
-    width:300px;
+
+    width: 600px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
@@ -117,10 +118,6 @@ button {
     margin: 0.5;
 }
 
-
-
-
-
 @media screen and (min-width:601px) {
     .mobile-img {
         display: none;
@@ -163,9 +160,9 @@ button {
 
 
 }
-
 @media screen and (max-width:600px) {
     .desktop-img {
         display: none;
     }
 }
+
